@@ -1,0 +1,15 @@
+body {
+  background-color: #63AFD0;
+//  text-align: center;
+}
+
+.signinbutton {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -75px;
+  height: 100px;
+  width: 150px;
+
+}

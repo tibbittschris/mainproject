@@ -1,0 +1,17 @@
+
+{{#each feed}}
+  <div class="border">
+    <img src="{{this.images.standard_resolution.url}}" class="photosize" />
+    <p>Likes: {{this.likes.count}} Comments: {{this.comments.count}} </p>
+    <button class="buttonleft">Love It!</button>
+    <button class="buttonright">Hate It!</button>
+  </div>
+{{/each}}
+
+
+<!-- <div class="posts">
+  {{#each feed}}
+    <img src = "{{this.images.standard_resolution.url}}">
+    <p>Likes: {{this.likes.count}}   Comments: {{this.comments.count}}</p>
+  {{/each}}
+</div> -->
