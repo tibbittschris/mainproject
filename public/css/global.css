@@ -18,7 +18,8 @@
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  height: 16%;
+  height: 100px;
+  z-index: 6;
 }
 /*
   !LOGO
@@ -32,7 +33,7 @@
   height: 100%;
   width: 9%;
   border-radius: 0px 0px 20px 0px;
-  background-color:#25935f;
+  background-color: #c0bcb3;
 }
 img.jw-logo {
   margin:0;
@@ -45,7 +46,7 @@ img.jw-logo {
 .jw-navbar {
   position: relative;
   float:left;
-  background-color:#25935f;
+  background-color: #aaa7a0;
   top:0;
   margin-left: 0;
   width:91%;
@@ -131,7 +132,7 @@ li.jw-saved-search-container {
   padding-right: 20px;
   padding-left: 1%;
   border-style:solid;
-  border-color: #25935f;
+  border-color: grey;
 }
 a.jw-saved-search-container {
   text-decoration: none;

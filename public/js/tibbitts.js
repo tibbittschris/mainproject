@@ -3,7 +3,7 @@ $(document).ready(function() {
     $(this).fadeOut(500)
   });
 
-  $('.buttonleft').click(function(){
-    $(this).fadeOut(500);
+  $('.testfeed').mouseenter(function(){
+    $('.buttonleft').visibility(visible);
   })
 });
