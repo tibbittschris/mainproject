@@ -26,7 +26,7 @@ background-color: #63AFD0;
 
 .border {
   width: 306px;
-  height: 306px;
+  height: 346px;
   border: solid 1px black;
   float: left;
   padding: 5px;
@@ -35,7 +35,7 @@ background-color: #63AFD0;
 
 .buttonleft {
   position: absolute;
-  margin-top: 260px;
+  margin-top: 270px;
   margin-left: 30px;
   height: 30px;
   width: 70px;
@@ -44,7 +44,7 @@ background-color: #63AFD0;
 
 .buttonright {
   position: absolute;
-  margin-top: 260px;
+  margin-top: 270px;
   margin-left: 210px;
   height: 30px;
   width: 70px;
@@ -52,7 +52,6 @@ background-color: #63AFD0;
 }
 
 .photosize {
-  /*position: relative;*/
   width: 95%;
   display:inline-block;
   position:relative;
@@ -61,14 +60,19 @@ background-color: #63AFD0;
 
 .testfeed {
   float: left;
-  margin: 20px;
+  margin: 5px;
   height: 310px;
   width: 310px;
+  padding: 15px;
+  background-color: grey;
+  border: black solid 2px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .photo {
   width: 310px;
   height: 310px;
   position: absolute;
-  z-index: 0;
+  z-index: 2;
+  border-radius: 10px 10px 10px 10px;
 }

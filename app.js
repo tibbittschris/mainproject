@@ -5,17 +5,22 @@ bodyParser  = require('body-parser')
 path	      = require('path')
 indexRoutes	= require('./routes/index.js')
 userRoutes	= require('./routes/user.js')
+session = require('express-session')
 querystring = require('querystring')
+
+cfg = require('./config.js')
 
 var app = express();
 
-ACCESS_TOKEN = ''
-CLIENT_ID = 'afdc0b4978f149cab3801f5501116ebd'
-CLIENT_SECRET = '341145521ab545beb9ac1eef625cbd7c'
-REDIRECT_URI = 'http://127.0.0.1:3000/auth/finalize'
-
 app.engine('handlebars', exphbs({defaultLayout: 'base'}));
 app.set('view engine', 'handlebars');
+
+app.use(session({
+  cookieName: 'session',
+  secret: 'jijf849hfinvufenv7834bbs283s',
+  resave: false,
+  saveUninitialized: true
+}))
 
 app.use(express.static(path.join(__dirname, 'public')));
 

@@ -1,13 +1,13 @@
 var router = express.Router();
 
 router.get('/dashboard', function(req, res){
-  if (ACCESS_TOKEN === ''){
+  if (cfg.access_token === ''){
     res.redirect('/')
   }
 
   else{
     var options = {
-      url: 'https://api.instagram.com/v1/users/self/feed?access_token=' + ACCESS_TOKEN
+      url: 'https://api.instagram.com/v1/users/self/feed?access_token=' + cfg.access_token
     }
 
     request.get(options, function(error, response, body){
