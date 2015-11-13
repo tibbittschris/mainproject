@@ -1,7 +1,7 @@
 /*Christopher Tibbitts*/
 
 body {
-background-color: #63AFD0;
+background-color: #003768;
 }
 
 #test {
@@ -40,6 +40,7 @@ background-color: #63AFD0;
   height: 30px;
   width: 70px;
   z-index: 1;
+  border-radius: 13px 13px 13px 13px;
 }
 
 .buttonright {
@@ -49,6 +50,7 @@ background-color: #63AFD0;
   height: 30px;
   width: 70px;
   z-index: 1;
+  border-radius: 13px 13px 13px 13px;
 }
 
 .photosize {
@@ -75,4 +77,14 @@ background-color: #63AFD0;
   position: absolute;
   z-index: 2;
   border-radius: 10px 10px 10px 10px;
+}
+
+.comment {
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 20px;
+  height: 30px;
+  width: 268px;
+  z-index: 1;
+  border-radius: 8px 8px 8px 8px;
 }

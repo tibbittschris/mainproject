@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('.buttonleft').animate({marginTop: '+=56px'});
     $('.buttonright').animate({marginTop: '+=56px'});
     // $(this).animate({paddingBottom: '+=50px'});
-    $(this).animate({height: '+=46px'});
+    $('.testfeed').animate({height: '+=46px'});
   });
 
   $('.testfeed').mouseleave(function() {
@@ -16,7 +16,12 @@ $(document).ready(function() {
     $('.buttonleft').animate({marginTop: '-=56px'});
     $('.buttonright').animate({marginTop: '-=56px'});
     // $(this).animate({paddingBottom: '-=50px'});
-    $(this).animate({height: '-=46px'});
+    $('.testfeed').animate({height: '-=46px'});
+  });
+
+  $('.buttonright').click(function() {
+    $('.comment').animate({marginTop: '+=99px'});
+    $('.testfeed').animate({height: '+=46px'});
   });
 
 });

@@ -23,4 +23,39 @@ router.get('/dashboard', function(req, res){
   }
 })
 
+router.get('/profile', function(req, res){
+  //console.log(body)
+  res.render('profile', {
+     layout: 'auth_base',
+     title: 'User Profile!',
+     pageintro: 'This is the Profile page!'
+  })
+})
+
+router.get('/search', function(req, res){
+  if (cfg.access_token === ''){
+    res.redirect('/')
+  }
+
+  else{
+    var options = {
+      url: 'https://api.instagram.com/v1/media/search?lat=48.858844&lng=2.294351&access_token=' + cfg.access_token
+    }
+
+    request.get(options, function(error, response, body){
+      var feed = JSON.parse(body)
+      // var profile = {
+      //   url: 'https://api.instagram.com/v1/users/' + feed. + '/?access_token=ACCESS-TOKEN' + cfg.access_token
+      // }
+      //console.log(body)
+      res.render('search', {
+         feed: feed.data,
+         layout: 'auth_base',
+         title: 'Search Page!',
+         pageintro: 'This is the search page!'
+       })
+    })
+  }
+})
+
 module.exports = router
