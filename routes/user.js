@@ -39,7 +39,7 @@ router.get('/search', function(req, res){
 
   else{
     var options = {
-      url: 'https://api.instagram.com/v1/media/search?lat=48.858844&lng=2.294351&access_token=' + cfg.access_token
+      url: 'https://api.instagram.com/v1/tags/search?q=' + searchinput.value + '&access_token=' + cfg.access_token
     }
 
     request.get(options, function(error, response, body){
