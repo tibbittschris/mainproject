@@ -39,7 +39,7 @@ router.get('/search', function(req, res){
 
   else{
     var options = {
-      url: 'https://api.instagram.com/v1/tags/search?q=' + searchinput.value + '&access_token=' + cfg.access_token
+      url: 'https://api.instagram.com/v1/tags/' + 'puppy' + '/media/recent?access_token=' + cfg.access_token
     }
 
     request.get(options, function(error, response, body){
