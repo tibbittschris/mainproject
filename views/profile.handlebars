@@ -1,3 +1,14 @@
-<div class="content">
-  <h3>{{pageintro}}!!!</h3>
+<div class="jw-profile-large">
+  <img src="{{user.profile_picture}}" style=  "display: block;  margin-left:auto; margin-right: auto" />
+      <div class="profile-info" >
+      <p style = "text-decoration:bold;" >
+        Username: {{user.username}}
+      </p>
+      <p >
+        Following: {{user.counts.follows}}
+      </p>
+      <p>
+        Followers: {{user.counts.followed_by}}
+      </p>
+    </div>
 </div>

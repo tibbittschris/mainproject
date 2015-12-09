@@ -1,7 +1,7 @@
 /*Christopher Tibbitts*/
 
 body {
-background-color: #003768;
+background-color: #63AFD0;
 }
 
 #test {
@@ -36,19 +36,36 @@ background-color: #003768;
 .buttonleft {
   position: absolute;
   margin-top: 270px;
-  margin-left: 30px;
+  margin-left: 0px;
   height: 30px;
-  width: 70px;
+  width: 120px;
   z-index: 1;
   border-radius: 13px 13px 13px 13px;
 }
-
+.likes{
+  position: absolute;
+  margin-top: 274px;
+  margin-left: 105px;
+  height: 30px;
+  width: 120px;
+  z-index: 1;
+  border-radius: 13px 13px 13px 13px;
+}
+.comments{
+  position: absolute;
+  margin-top: 274px;
+  margin-left: 190px;
+  height: 30px;
+  width: 120px;
+  z-index: 1;
+  border-radius: 13px 13px 13px 13px;
+}
 .buttonright {
   position: absolute;
   margin-top: 270px;
-  margin-left: 210px;
+  margin-left: 190px;
   height: 30px;
-  width: 70px;
+  width: 120px;
   z-index: 1;
   border-radius: 13px 13px 13px 13px;
 }
@@ -63,7 +80,7 @@ background-color: #003768;
 .testfeed {
   float: left;
   margin: 5px;
-  height: 310px;
+  height: 355px;
   width: 310px;
   padding: 15px;
   background-color: grey;
@@ -87,4 +104,13 @@ background-color: #003768;
   width: 268px;
   z-index: 1;
   border-radius: 8px 8px 8px 8px;
+}
+
+.searchbutton {
+  display:inline;
+  margin-left: 607px;
+  margin-top: 0;
+  margin-right: 0;
+  width: 60px;
+  height: 25px;
 }

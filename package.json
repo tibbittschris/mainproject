@@ -17,5 +17,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Group members:   Joshua Wilding   Terik Brunson   Matthew Morris   Chris Tibbitts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshwilding4444/sharegroup-fork.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshwilding4444/sharegroup-fork/issues"
+  },
+  "homepage": "https://github.com/joshwilding4444/sharegroup-fork#readme"
 }

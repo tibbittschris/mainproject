@@ -12,7 +12,7 @@
 <body>
   <div class="jw-main-navigation">
     <div class="jw-logo">
-      <img src="/images/utah_state_aggies.png" class="jw-logo" alt="logo" />
+      <a href="/user/dashboard"><img src="/images/utah_state_aggies.png" class="jw-logo" alt="logo" /></a>
     </div>
     <div class="jw-navbar">
         <ul class="jw-navbar">
@@ -21,19 +21,23 @@
             <a class="jw-navbar" href="/user/dashboard"><img src="/images/home.png" class="homeicon" alt="home" /></a>
           </li>
           <li class="jw-navbar">
-            <form>
-              <input class="jw-search">
-            </form>
+            <!--
+              The following form is the search form that receives the search query
+                which is used in user.js:req.query.search
+              -->
+          <form class = "jw-search" method="get" action="/user/search">
+              <input class="jw-search" type="text" name="search" value="">
+                <input class="jw-search-button" type="submit" name="submit" value="">
+          </form>
           </li>
-          <li>
-            <a href="/user/search"><img src="http://www.clipartbest.com/cliparts/4cb/K7G/4cbK7Gggi.png" class="jw-search" alt="search" /></a>
-          </li>
+        </ul>
         <li class="profileOne">
           <a class="profileOne" href="/user/profile"><img src="{{user.profile_picture}}" class="prof" alt="prof" /></a>
         </li>
         </ul>
       </div>
     </div>
+
 
     {{{body}}}
   </body>

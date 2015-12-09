@@ -1,9 +1,13 @@
 {{#each feed}}
-  <div class="testfeed {{this.id}}">
+  <div class="testfeed">
     <img src="{{this.images.standard_resolution.url}}" class="photo" />
-    <!-- <p>Likes: {{this.likes.count}} Comments: {{this.comments.count}} </p> -->
-    <button class="buttonleft {{this.id}}">Like</button>
-    <button class="buttonright {{this.id}}">Comment</button>
+    <!--
+    <p>Likes: {{this.likes.count}} Comments: {{this.comments.count}} </p> -->
+    <!--<p class = "likes"> {{likes.count}}</p>
+    <p class ="comments"> {{comments.count}}</p>
+  -->
+    <button class="buttonleft">Like: {{this.likes.count}}</button>
+    <button class="buttonright">Comment: {{this.comments.count}}</button>
     <input class="comment">
   </div>
 {{/each}}
